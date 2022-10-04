@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    padding: 3rem;
+}
+h1{
+    padding: 1rem 0;
+}
+.tabla{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    gap: 20px;
+    padding: 1rem 0;
+}
+.codificar{
+    display: flex;
+    padding: 1rem 0;
+    flex-direction: column;
+}
+input{
+    display: flexbox;
+    width: 300px;
+    
+}
+.textoCodificado{
+    display: flex;
+    background-color: blue;
+    color: white;
+    justify-content: center;
+}
+.nuevoDivCodificador{
+    padding: 1rem 0;
+}
+
+@media only screen and (min-width:768px) {
+    
+   
+    .tabla{
+        display: flex;
+        padding: 1rem;
+        gap: 20px;
+        width: 100%;
+        border-color: black;   
+        flex-direction: column;
+        
+    }
+    
+   /* .p1{
+        display: flex;
+        padding: 1rem;
+        width: 20px;
+        border: 5px;
+        border-color: black;
+    }*/
+    .numero{
+        display: flex;
+        
+       
+       color: white;
+       
+       
+       flex-grow: 1;
+       flex-direction: row;
+       display: flexbox;
+       gap: 20px;
+       
+       
+    }
+    
+    .letra{
+        display: flex;
+        
+       
+        
+        
+        color: white;
+        
+        flex-grow: 1;
+        flex-direction: row;
+        display: flexbox;
+        
+        gap: 26px;
+    }
+    .codificar{
+        display: flex;
+        padding: 1rem 0;
+        flex-direction: column;
+    }
+    input{
+        display: flexbox;
+        width: 500px;
+        
+    }
+    .avanzar{
+        width: 50px;
+    }
+    .textoCodificado{
+        display: flex;
+        padding: 1rem 0;
+        background-color: blue;
+        color: white;
+        justify-content: center;
+
+    }
+}
