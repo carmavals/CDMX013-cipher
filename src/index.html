@@ -1,200 +1,227 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-  
-    <script src="sketch.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main id="root">
-      <h1>Mis códigos</h1>
-      <section>
-        <article>
-      <p>Mis códigos, es una interfaz para descifrar textos ocultos en el descifrador Cesar. Aquí es posible escribir aquello que no deseas decir en voz alta,  algo que no le hayas podido decir a un ser querido a tiempo o tal vez algo que no sepas colocar en palabras.  El descifrador César funciona de la siguiente manera.  </p>
-      <div class="explicacion">
-        <p>Basandose en el alfabeto inglés (que solo admite 26 letras y no cuenta la letra ñ o ch) cada letra tomará el valor de la otra dependiendo de un número determinado de veces que se quiera recorrer la posición de la letra seleccionada para armar una palabra. Es decir, si nos fijamos en la tabla inferior podemos notar que la letra A toma la posición 1, la B la posición 2, la C la posición 3 y así sucesivamente hasta llegar a la letra Z que se encuentra en la posición 26 </p>
 
-        <div class="tabla">
-          <div class="numero">
-         <div class="p1">
-          <span>1</span>
-         </div>
-         <div class="p1">
-          <span>2</span>
-         </div>
-         <div class="p1">
-          <span>3</span>
-         </div>
-         <div class="p1">
-          <span>4</span>
-         </div>
-         <div class="p1">
-          <span>5</span>
-         </div>
-         <div class="p1">
-          <span>6</span>
-         </div>
-         <div class="p1">
-          <span>7</span>
-         </div>
-         <div class="p1">
-          <span>8</span>
-         </div>
-         <div class="p1">
-          <span>9</span>
-         </div>
-         <div class="p1">
-          <span>10</span>
-         </div>
-         <div class="p1">
-          <span>11</span>
-         </div>
-         <div class="p1">
-          <span>12</span>
-         </div>
-         <div class="p1">
-          <span>13</span>
-         </div>
-         <div class="p1">
-          <span>14</span>
-         </div>
-         <div class="p1">
-          <span>15</span>
-         </div>
-         <div class="p1">
-          <span>16</span>
-         </div>
-         <div class="p1">
-          <span>17</span>
-         </div>
-         <div class="p1">
-          <span>18</span>
-         </div>
-         <div class="p1">
-          <span>19</span>
-         </div>
-         <div class="p1">
-          <span>20</span>
-         </div>
-         <div class="p1">
-          <span>21</span>
-         </div>
-         <div class="p1">
-          <span>22</span>
-         </div>
-         <div class="p1">
-          <span>23</span>
-         </div>
-         <div class="p1">
-          <span>24</span>
-         </div>
-         <div class="p1">
-          <span>25</span>
-         </div>
-         <div class="p1">
-          <span>26</span>
-         </div>
-         </div>
-         <div class="letra">
-         <div class="p1">
-          <span>A</span>
-         </div>
-         <div class="p1">
-          <span>B</span>
-         </div>
-         <div class="p1">
-          <span>C</span>
-         </div>
-         
-         <div class="p1">
-          <span>D</span>
-         </div>
-         <div class="p1">
-          <span>E</span>
-         </div>
-         <div class="p1">
-          <span>F</span>
-         </div>
-         <div class="p1">
-          <span>G</span>
-         </div>
-         <div class="p1">
-          <span>H</span>
-         </div>
-         <div class="p1">
-          <span>I</span>
-         </div>
-         <div class="p1">
-          <span>J</span>
-         </div>
-         <div class="p1">
-          <span>K</span>
-         </div>
-         <div class="p1">
-          <span>L</span>
-         </div>
-         <div class="p1">
-          <span>M</span>
-         </div>
-         <div class="p1">
-          <span>N</span>
-         </div>
-         <div class="p1">
-          <span>O</span>
-         </div>
-         <div class="p1">
-          <span>P</span>
-         </div>
-         <div class="p1">
-          <span>Q</span>
-         </div>
-         <div class="p1">
-          <span>R</span>
-         </div>
-         <div class="p1">
-          <span>S</span>
-         </div>
-         <div class="p1">
-          <span>T</span>
-         </div>
-         <div class="p1">
-          <span>U</span>
-         </div>
-         <div class="p1">
-          <span>V</span>
-         </div>
-         <div class="p1">
-          <span>W</span>
-         </div>
-         <div class="p1">
-          <span>X</span>
-         </div>
-         <div class="p1">
-          <span>Y</span>
-         </div>
-         <div class="p1">
-          <span>Z</span>
-         </div>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+
+  <script src="sketch.js"></script>
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main id="root">
+    <h1>Mis códigos</h1>
+    <section>
+      <article>
+        <p>Mis códigos, es una interfaz para descifrar textos ocultos en el descifrador Cesar. Aquí es posible escribir
+          aquello que no deseas decir en voz alta, algo que no le hayas podido decir a un ser querido a tiempo o tal vez
+          algo que no sepas colocar en palabras. El descifrador César funciona de la siguiente manera. </p>
+        <div class="explicacion">
+          <p>Basandose en el alfabeto inglés (que solo admite 26 letras y no cuenta la letra ñ o ch) cada letra tomará
+            el valor de la otra dependiendo de un número determinado de veces que se quiera recorrer la posición de la
+            letra seleccionada para armar una palabra. Es decir, si nos fijamos en la tabla inferior podemos notar que
+            la letra A toma la posición 1, la B la posición 2, la C la posición 3 y así sucesivamente hasta llegar a la
+            letra Z que se encuentra en la posición 26 </p>
+
+          <div class="tabla">
+            <div class="numero">
+              <div class="p1">
+                <span>1</span>
+              </div>
+              <div class="p1">
+                <span>2</span>
+              </div>
+              <div class="p1">
+                <span>3</span>
+              </div>
+              <div class="p1">
+                <span>4</span>
+              </div>
+              <div class="p1">
+                <span>5</span>
+              </div>
+              <div class="p1">
+                <span>6</span>
+              </div>
+              <div class="p1">
+                <span>7</span>
+              </div>
+              <div class="p1">
+                <span>8</span>
+              </div>
+              <div class="p1">
+                <span>9</span>
+              </div>
+              <div class="p1">
+                <span>10</span>
+              </div>
+              <div class="p1">
+                <span>11</span>
+              </div>
+              <div class="p1">
+                <span>12</span>
+              </div>
+              <div class="p1">
+                <span>13</span>
+              </div>
+              <div class="p1">
+                <span>14</span>
+              </div>
+              <div class="p1">
+                <span>15</span>
+              </div>
+              <div class="p1">
+                <span>16</span>
+              </div>
+              <div class="p1">
+                <span>17</span>
+              </div>
+              <div class="p1">
+                <span>18</span>
+              </div>
+              <div class="p1">
+                <span>19</span>
+              </div>
+              <div class="p1">
+                <span>20</span>
+              </div>
+              <div class="p1">
+                <span>21</span>
+              </div>
+              <div class="p1">
+                <span>22</span>
+              </div>
+              <div class="p1">
+                <span>23</span>
+              </div>
+              <div class="p1">
+                <span>24</span>
+              </div>
+              <div class="p1">
+                <span>25</span>
+              </div>
+              <div class="p1">
+                <span>26</span>
+              </div>
+            </div>
+            <div class="letra">
+              <div class="p1">
+                <span>A</span>
+              </div>
+              <div class="p1">
+                <span>B</span>
+              </div>
+              <div class="p1">
+                <span>C</span>
+              </div>
+
+              <div class="p1">
+                <span>D</span>
+              </div>
+              <div class="p1">
+                <span>E</span>
+              </div>
+              <div class="p1">
+                <span>F</span>
+              </div>
+              <div class="p1">
+                <span>G</span>
+              </div>
+              <div class="p1">
+                <span>H</span>
+              </div>
+              <div class="p1">
+                <span>I</span>
+              </div>
+              <div class="p1">
+                <span>J</span>
+              </div>
+              <div class="p1">
+                <span>K</span>
+              </div>
+              <div class="p1">
+                <span>L</span>
+              </div>
+              <div class="p1">
+                <span>M</span>
+              </div>
+              <div class="p1">
+                <span>N</span>
+              </div>
+              <div class="p1">
+                <span>O</span>
+              </div>
+              <div class="p1">
+                <span>P</span>
+              </div>
+              <div class="p1">
+                <span>Q</span>
+              </div>
+              <div class="p1">
+                <span>R</span>
+              </div>
+              <div class="p1">
+                <span>S</span>
+              </div>
+              <div class="p1">
+                <span>T</span>
+              </div>
+              <div class="p1">
+                <span>U</span>
+              </div>
+              <div class="p1">
+                <span>V</span>
+              </div>
+              <div class="p1">
+                <span>W</span>
+              </div>
+              <div class="p1">
+                <span>X</span>
+              </div>
+              <div class="p1">
+                <span>Y</span>
+              </div>
+              <div class="p1">
+                <span>Z</span>
+              </div>
+            </div>
+
+          </div>
         </div>
-         
-         </div>
+        <div>
+          <p>Entonces, si quisieramos escribir 'CASA' y hemos decidido avanzar 3 posiciones, nuestra palabra codificada
+            sería 'FDVD'. Pero la palabra 'CASA' no seríá la misma palabra codificada si es que quisieramos avanzar 11
+            posiciones. Intenta escribir 'TE QUIERO' avanzando 11 posiciones en el abecedario.</p>
         </div>
-        <p>Entonces, si quisieramos escribir 'CASA' y hemos decidido avanzar 3 posiciones, nuestra palabra codificada sería 'FDVD'. Pero la palabra 'CASA' no seríá la misma palabra codificada si es que quisieramos avanzar 11 posiciones. Intenta escribir 'TE QUIERO' avanzando 11 posiciones en el abecedario.</p>
+      </article>
+      <div id="codifica" class="codificar" id="codificado">
+        <form id="form1">
+        <label for="encode">Inserta lo que quieres decir:</label> <br>
+        <input id="encode" type="text" placeholder="Escribe aqui">
+        <label for="offset">Inserta las posiciones que quieras avanzar:</label>
+        <input id="offset" class="avanzar" type="number" placeholder="Cuántas veces quieres avanzar">
+        <input type="submit" value="CIFRAR">
+      </form>
+      </div> <br>
+      <div id="decodifica" class="decodificar">
+        <form id="form2" >
+        <label for="decode" id="decodificado">Intenta decodificar una frase, tal vez quiseras saber qué ha puesto
+          la autora aquí abajo o intentar con algo propio:</label> <br>
+        <input id="decode" type="text" placeholder="Escribe aquí"> <br>
+        <label for="offset2">Inserta las posiciones que quisieras retroceder</label> <br>
+        <input id="offset2" type="number" placeholder="Cuántas vees quieres retroceder">
+        <input type="submit" value="DESCIFRAR">
+      </form>
       </div>
-    </article>
-      <div class="codificar" id="codificado">
-      <label for="encode">Inserta lo que quieres decir:</label> <br>
-      <input id="encode" type="text" >
-      <label for="posicion">Inserta las posiciones que quieras avanzar:</label>
-      <input id="offset" class="avanzar" type="number">
-    </div>
     </section>
   </main>
-    
-    <script src="index.js" type="module"></script>
-  </body>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

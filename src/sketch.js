@@ -2,14 +2,14 @@ let canvas
 let mic
 function windowResized() {
 
-  resizeCanvas(windowWidth, windowHeight)
+  resizeCanvas(windowWidth*2, windowHeight*2)
   console.log('funciona')
 }
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth*2, windowHeight*2);
   canvas.position(0, 0)
   canvas.style('z-index', '-1')
-  background(235, 152, 78);
+  background(121, 121, 192);
   // mic = new p5.AudioIn()
   // mic.start()
 }
@@ -18,7 +18,7 @@ function setup() {
 // }
 function draw() {
   if (mouseIsPressed) {
-    stroke(125, 60, 152)
+    stroke(255,140,0)
     line(pmouseX, pmouseY, mouseX, mouseY)
     strokeWeight(12)
   }
