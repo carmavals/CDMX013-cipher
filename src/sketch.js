@@ -6,7 +6,7 @@ function windowResized() {
   console.log('funciona')
 }
 function setup() {
-  canvas = createCanvas(windowWidth*2, windowHeight*2);
+  canvas = createCanvas(windowWidth, windowHeight*4);
   canvas.position(0, 0)
   canvas.style('z-index', '-1')
   background(121, 121, 192);

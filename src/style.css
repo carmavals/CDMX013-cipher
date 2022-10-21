@@ -1,168 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;600&display=swap');
+/* rgb(121, 121, 192); lavanda
+rgb(241, 147, 32) 
+rgb(64, 147, 153)*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
+    overflow-x: hidden;
     background-color: rgb(121, 121, 192);
-    font-family: 'Gemunu Libre', sans-serif;
-    font-size: 45px;
+    font-family: 'Gemunu Libre',sans-serif;
+}
+.seccion_flex{
+    display: flex;
+    flex-direction: column;
+   
 }
 main{
-    padding: 10%;
+    padding: 0 2rem;
+    
 }
-h1{
-    padding: 1rem 0;
+ol{
+    padding: 0 2rem;
+}
+li{
+    padding: 0 40px 2px 0;
 }
 .tabla{
+    
     display: flex;
-    color: white;
-    font-weight: bold;
-    gap: 20px;
-    padding: 1rem 0;
-}
-.codificar{
-    display: flex;
-    padding: 1rem 0;
+    
+    padding: 1rem;
     flex-direction: column;
 }
-.codificar input {
-    display: block;
-    width: 30%;
-    height: 50px;
+.div_explicador{
+    display: flex;
+    padding: 1rem 0 0 0;
+    flex-direction: row;
+}
+.inputs{
+    padding: 1rem 2rem 1rem 2rem;
+display: flex;
+flex-direction: column;
+gap: 20px;
+background-color: rgba(90, 90, 194, 0.753);
+color: black;
+height: max-content;
+width: min-content;
+border-radius: 1rem;
+justify-content: left;
+align-items: left;
+align-content: left;
+position: fixed;
+right: 0px;
+bottom: 20px;
+
+
+box-shadow:rgb(89, 89, 185)  5px 5px ;
+}
+.explicacion_obra{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0 ;
+    gap: 20px;
+}
+.obra{
+    display: flex;
+    padding: 1rem 0 0 0;
+}
+.divNaranja{
+    background-color: rgb(241, 147, 32) ;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: rgb(182, 113, 30) 5px 5px ;
     
 }
 
-.decodificar input{
-    display: block;
-    width: 30%;
-    height: 50px;
-    
-}
-/*.decodificar input{
-    display: flex;
-    width: 20px;
-    height: 50px;
-}*/
-.textoCodificado{
-    display: flex;
-    background-color: blue;
-    color: white;
-    justify-content: center;
-}
-.nuevoDivCodificador{
-    padding: 1rem 0;
-}
-div{
-    gap: 15px;
-}
-.divResultado{
-
-    display: flex;
-    width: 90%;
-    height: 90%;
-    background-color: rgb(64, 147, 153);
-    padding: 2rem;
-    color: white;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-       
-}
-
-@media only screen and (min-width:890px) {
-    
-   main{
-    padding: 5%;
-   }
+@media screen and (min-width: 500px){
     .tabla{
-        display: flex;
         padding: 1rem;
-        gap: 20px;
-        width: 100%;
-        border-color: black;   
+        display: flex;
         flex-direction: column;
-        
     }
-    
-   /* .p1{
+    .unido{
         display: flex;
-        padding: 1rem;
-        width: 20px;
-        border: 5px;
-        border-color: black;
-    }*/
-    .numero{
-        display: flex;
-        
-       
-       color: white;
-       
-       
-       flex-grow: 1;
-       flex-direction: row;
-       display: flexbox;
-       gap: 20px;
-       
-       
-    }
-    
-    .letra{
-        display: flex;
-        
-       
-        
-        
-        color: white;
-        
-        flex-grow: 1;
         flex-direction: row;
-        display: flexbox;
-        
-        gap: 33px;
-    }
-    .codificar{
-        display: flex;
-        padding: 1rem 0;
-        flex-direction: column;
-    }
-    .codifcar input{
-        display: flexbox;
-        width: 500px;
         
     }
-    .decodificar input{
-        display: flexbox;
-        width: 500px; 
+    main{
+        padding: 0 5rem;
     }
-    .avanzar{
-        width: 50px;
+    ol{
+        padding: 0 2rem;
     }
-    .textoCodificado{
+    li{
+        padding: 0 40px 2px 0;
+    }
+    .div_explicador{
+        padding: 1rem 0 0 0;
+    }
+    .explicacion_obra{
         display: flex;
-        padding: 1rem 0;
-        background-color: blue;
-        color: white;
-        justify-content: center;
-
-    }
-    .divResultado{
-
-        display: flex;
-        width: 90%;
-        height: 90%;
-        background-color: rgb(64, 147, 153);
-        padding: 2rem;
-        color: white;
-        align-items: center;
-        align-self: center;
-        justify-content: center;
-
-        
-    }
-
-    div{
+        flex-direction: row;
         gap: 20px;
+    }
+    .inputs{
+        padding: 1rem 10rem 1rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   background-color: rgba(171, 171, 206, 0.781);
+    color: black;
+    height: max-content;
+    width: min-content;
+    border-radius: 1rem;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+    
+    
+    
+    box-shadow:rgb(89, 89, 185) blur 5px 5px ;
+    }
+    .obra{
+        padding: 1rem 0 0 0;
+    }
+    .divNaranja{
+        background-color: rgb(241, 147, 32) ;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        box-shadow: rgb(182, 113, 30) 5px 5px ;
+        height: 50vh;
+    }
+    .divResultado2{
+        background-color: rgb(64, 147, 153);
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 120%;
+        box-shadow: rgb(42, 98, 102) 5px 5px;
     }
 }

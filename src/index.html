@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
+  <title>Console.log(skins_code)</title>
 
   <script src="libraries/p5.min.js"></script>
   <script src="libraries/p5.sound.min.js"></script>
@@ -15,209 +15,200 @@
 
 <body>
   <main id="root">
-    <h1>Mis códigos</h1>
-    <section>
-      <article>
-        <p>Mis códigos, es una interfaz para descifrar textos ocultos en el descifrador Cesar. Aquí es posible escribir
-          aquello que no deseas decir en voz alta, algo que no le hayas podido decir a un ser querido a tiempo o tal vez
-          algo que no sepas colocar en palabras. El descifrador César funciona de la siguiente manera. </p>
-        <div class="explicacion">
-          <p>Basandose en el alfabeto inglés (que solo admite 26 letras y no cuenta la letra ñ o ch) cada letra tomará
+
+    <h1>Console.log(skins_code)</h1>
+    <section class="seccion_flex">
+      <hr>
+      <section class="seccion_flex">
+
+        <div class="seccion_flex">
+          <p>Console.log(skins_code), es una interfaz para descifrar textos ocultos en el descifrador Cesar. Aquí es
+            posible escribir
+            aquello que no deseas decir en voz alta, algo que no le hayas podido decir a un ser querido a tiempo o tal
+            vez
+            algo que no sepas colocar en palabras. El descifrador César funciona de la siguiente manera. Basandose en
+            el alfabeto inglés (que solo admite 26 letras y no cuenta la letra ñ o ch) cada letra tomará
             el valor de la otra dependiendo de un número determinado de veces que se quiera recorrer la posición de la
             letra seleccionada para armar una palabra. Es decir, si nos fijamos en la tabla inferior podemos notar que
-            la letra A toma la posición 1, la B la posición 2, la C la posición 3 y así sucesivamente hasta llegar a la
+            la letra A toma la posición 1, la B la posición 2, la C la posición 3 y así sucesivamente hasta llegar a
+            la
             letra Z que se encuentra en la posición 26 </p>
-
-          <div class="tabla">
-            <div class="numero">
-              <div class="p1">
-                <span>1</span>
-              </div>
-              <div class="p1">
-                <span>2</span>
-              </div>
-              <div class="p1">
-                <span>3</span>
-              </div>
-              <div class="p1">
-                <span>4</span>
-              </div>
-              <div class="p1">
-                <span>5</span>
-              </div>
-              <div class="p1">
-                <span>6</span>
-              </div>
-              <div class="p1">
-                <span>7</span>
-              </div>
-              <div class="p1">
-                <span>8</span>
-              </div>
-              <div class="p1">
-                <span>9</span>
-              </div>
-              <div class="p1">
-                <span>10</span>
-              </div>
-              <div class="p1">
-                <span>11</span>
-              </div>
-              <div class="p1">
-                <span>12</span>
-              </div>
-              <div class="p1">
-                <span>13</span>
-              </div>
-              <div class="p1">
-                <span>14</span>
-              </div>
-              <div class="p1">
-                <span>15</span>
-              </div>
-              <div class="p1">
-                <span>16</span>
-              </div>
-              <div class="p1">
-                <span>17</span>
-              </div>
-              <div class="p1">
-                <span>18</span>
-              </div>
-              <div class="p1">
-                <span>19</span>
-              </div>
-              <div class="p1">
-                <span>20</span>
-              </div>
-              <div class="p1">
-                <span>21</span>
-              </div>
-              <div class="p1">
-                <span>22</span>
-              </div>
-              <div class="p1">
-                <span>23</span>
-              </div>
-              <div class="p1">
-                <span>24</span>
-              </div>
-              <div class="p1">
-                <span>25</span>
-              </div>
-              <div class="p1">
-                <span>26</span>
-              </div>
-            </div>
-            <div class="letra">
-              <div class="p1">
-                <span>A</span>
-              </div>
-              <div class="p1">
-                <span>B</span>
-              </div>
-              <div class="p1">
-                <span>C</span>
-              </div>
-
-              <div class="p1">
-                <span>D</span>
-              </div>
-              <div class="p1">
-                <span>E</span>
-              </div>
-              <div class="p1">
-                <span>F</span>
-              </div>
-              <div class="p1">
-                <span>G</span>
-              </div>
-              <div class="p1">
-                <span>H</span>
-              </div>
-              <div class="p1">
-                <span>I</span>
-              </div>
-              <div class="p1">
-                <span>J</span>
-              </div>
-              <div class="p1">
-                <span>K</span>
-              </div>
-              <div class="p1">
-                <span>L</span>
-              </div>
-              <div class="p1">
-                <span>M</span>
-              </div>
-              <div class="p1">
-                <span>N</span>
-              </div>
-              <div class="p1">
-                <span>O</span>
-              </div>
-              <div class="p1">
-                <span>P</span>
-              </div>
-              <div class="p1">
-                <span>Q</span>
-              </div>
-              <div class="p1">
-                <span>R</span>
-              </div>
-              <div class="p1">
-                <span>S</span>
-              </div>
-              <div class="p1">
-                <span>T</span>
-              </div>
-              <div class="p1">
-                <span>U</span>
-              </div>
-              <div class="p1">
-                <span>V</span>
-              </div>
-              <div class="p1">
-                <span>W</span>
-              </div>
-              <div class="p1">
-                <span>X</span>
-              </div>
-              <div class="p1">
-                <span>Y</span>
-              </div>
-              <div class="p1">
-                <span>Z</span>
-              </div>
-            </div>
-
-          </div>
         </div>
-        <div>
+
+      </section>
+
+      <section class="seccion_flex unido">
+        <div class="seccion_flex ">
+          <ol class="tabla">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+            <li>G</li>
+            <li>H</li>
+            <li>I</li>
+            <li>J</li>
+            <li>K</li>
+            <li>L</li>
+            <li>M</li>
+            <li>N</li>
+            <li>O</li>
+            <li>P</li>
+            <li>Q</li>
+            <li>R</li>
+            <li>S</li>
+            <li>T</li>
+            <li>U</li>
+            <li>V</li>
+            <li>W</li>
+            <li>X</li>
+            <li>Y</li>
+            <li>Z</li>
+
+          </ol>
+
+
+        </div>
+        <div class="seccion_flex unido div_explicador">
           <p>Entonces, si quisieramos escribir 'CASA' y hemos decidido avanzar 3 posiciones, nuestra palabra codificada
             sería 'FDVD'. Pero la palabra 'CASA' no seríá la misma palabra codificada si es que quisieramos avanzar 11
             posiciones. Intenta escribir 'TE QUIERO' avanzando 11 posiciones en el abecedario.</p>
+          <section class="seccion_flex inputs">
+            <div id="codifica" class="codificar" id="codificado">
+              <form id="form1">
+                <label for="encode">Inserta lo que quieres decir:</label> <br>
+                <input id="encode" type="text" placeholder="Escribe aqui">
+                <label for="offset">Inserta las posiciones que quieras avanzar:</label>
+                <input id="offset" class="avanzar" type="number" placeholder="Cuántas veces quieres avanzar">
+                <input type="submit" value="CIFRAR">
+              </form>
+            </div>
+            <div id="decodifica" class="decodificar">
+              <form id="form2">
+                <label for="decode" id="decodificado">Intenta decodificar una frase, tal vez quiseras saber qué ha
+                  puesto
+                  la autora aquí abajo o intentar con algo propio:</label> <br>
+                <input id="decode" type="text" placeholder="Escribe aquí"> <br>
+                <label for="offset2">Inserta las posiciones que quisieras retroceder</label> <br>
+                <input id="offset2" type="number" placeholder="Cuántas vees quieres retroceder">
+                <input type="submit" value="DESCIFRAR">
+              </form>
+            </div>
+          </section>
         </div>
-      </article>
-      <div id="codifica" class="codificar" id="codificado">
-        <form id="form1">
-        <label for="encode">Inserta lo que quieres decir:</label> <br>
-        <input id="encode" type="text" placeholder="Escribe aqui">
-        <label for="offset">Inserta las posiciones que quieras avanzar:</label>
-        <input id="offset" class="avanzar" type="number" placeholder="Cuántas veces quieres avanzar">
-        <input type="submit" value="CIFRAR">
-      </form>
-      </div> <br>
-      <div id="decodifica" class="decodificar">
-        <form id="form2" >
-        <label for="decode" id="decodificado">Intenta decodificar una frase, tal vez quiseras saber qué ha puesto
-          la autora aquí abajo o intentar con algo propio:</label> <br>
-        <input id="decode" type="text" placeholder="Escribe aquí"> <br>
-        <label for="offset2">Inserta las posiciones que quisieras retroceder</label> <br>
-        <input id="offset2" type="number" placeholder="Cuántas vees quieres retroceder">
-        <input type="submit" value="DESCIFRAR">
-      </form>
-      </div>
+
+      </section>
+
+
+      <section class="seccion_flex obra">
+        <div class="seccion_flex loquequiero">
+          <p>La autora ha decidido usaar este espacio como su teatro y mezclar verdad y ficción de su propia perspectiva, pero
+            no ha querido solamente que leas lo que ha escrito, quisiera que pases por el proceso de descubrir, tal vez
+            usando
+            una fórmula matemática o indagando dentro de las pistas que ha dejado cómo poder descrifrar su texto.
+          </p>
+          <section class="explicacion_obra">
+            <div class="divNaranja">
+              <ol>
+                <li>La edad de la autora + 1</li>
+                <li>La suma de los dos números escritos en el párrafo</li>
+                <li>La edad de Mahsa Amini</li>
+                <li>1</li>
+                <li><a
+                    href="https://ojo-publico.com/3771/siete-lideres-indigenas-amazonicos-fueron-asesinados-el-2021-peru">Líderes
+                    indígenas asesinados en el 2021</a></li>
+                <li>50 </li>
+                <li>3</li>
+                <li>2022</li>
+                <li> y 10. Google maps: ubicación calle teniente 1504, Lima - Jr. Saenz Peña 127, Barranco</li>
+                <ul>11. Números de dígitos del DNI</ul>
+              </ol>
+            </div>
+
+            <div class="divResultado2">
+              <p>
+                1. La edad de la autora + 1: <br>
+
+                Op Ibz Dvfsqp Qsftfouf Tjo Nfouf. <Br>
+                Ubnqpdp Ibz Dvfsqp Qsftfouf Tjo Hpcjfsopt. <Br>
+                Dvboep Qsftfoué Nj Dvfsqp Op Ftubcb Qsftfouf Zp Fo Fm Ftqbdjp. <Br>
+                Mp Usbcbké, Mp Ftdvmqí, Dbshvé 5 Lh Fo Dbeb Csbap, <Br>
+                10 Lh Fo Dbeb Qjfsob Z Dpssí 30 Njovupt. <Br>
+                Mvfhp Ef Ftp, Nj Dvfsqp Tf Qsftfouó, Fyjtujó. <Br>
+                Nj Dvfsqp, Nj Dvfsqb, Nj Dvfsqf, <Br>
+                Wbt B Bcsjs Mb Ofwfsb Z Wbt B Fodpousbs Mp Rvf Tfb Qbsb Bmjnfoubsuf Qftf B Rvf Mb Njube Ef Mb <Br>
+                Qpcmbdjóo Op Qvfefo Dpnfs Mp Njtnp Rvf Uv, <Br>
+                Wbt B Dpssfs 35 Njovupt Nát, 40 P 45. <Br>
+                Op Ibt Dvnqmjep 26 Bñpt Qbsb Ibcmbs Ef Uv Qftp. <Br>
+                Op Uf Ibt Hsbevbep Qbsb Ibcmbs Ef Uv Qftp. <Br>
+                Op Usbcbkbt Qbsb Ibcmbs Ef Uv Qftp. <Br>
+                Op Qbtfbt Bm Qfssp Qbsb Ibcmbs Ef Uv Qftp. <Br>
+                Op Uf Ujuvmbtuf Qbsb Ibcmbs Ef Uv Qftp.
+                <br>
+                <br>
+                2. Minutos en total que la autora mira la computadora = la suma de los dos números escritos en el
+                párrafo:
+                <br>
+                Afx F Jshjsijw Qf Htruzyfitwf, Afx F Rnwfw Qf Ufsyfqqf Txhzwf Utw 2 Rnszytx, <br>
+                Qzjlt, 5 Rnszytx Ráx. Fywáx Yzdt, Xzhjijs Qfx Rfxfhwjx Ráx Fywthjx Ofráx Fsyjx Anxyfx <br>
+                <br>
+                3. La edad de Mahsa Amini: <br>
+                Iqfanao Oa Yknpwj Ah Ywxahhk Bnajpa W Qj Wpwqz, Pq Mqeoeanwo Mqa Yknpwnpa Ah Ywxahhk Bqaoa Iáo Lkhípeyk.
+                Hw Laopa Dw Nacnaowzk, Pa Dw Ykjpwcewzk U Oecqao Ienwjzk Pq Ykilqpwzknw Ykj Qj Aolnaook Yknpwzk Ykj
+                Hayda
+                Za Whiajznwo. <br>
+                <br>
+                4. 1 <br>
+                Fm Ujoefs Ib Wjcsbep, Jut B Nbudi! <br>
+                <br>
+                5. <a
+                  href="https://ojo-publico.com/3771/siete-lideres-indigenas-amazonicos-fueron-asesinados-el-2021-peru">Líderes
+                  índigenas asesinados en el 2021</a> <br>
+
+                Jhkh Zlthuh Bu Hjapcpzah Hthgóupjv Tblyl H Sh Why Xbl Ab Lzjypilz Lu Qhchzjypwa Sla P = 0, <br> Sla
+                Chyphisl = () => {} F Sla Tp_jblywh = ‘sv Xbl Zlh Xbl Kpvz Xbplyh’. <br>
+                <br>
+                6. 50 <br>
+
+                Asylbm Rc Rmaó Pcepcqyp Y Rsq Rgcppyq 50% Bc Jy Nmzjyagól Dckclgly Fyzíy Bcqyncpcagbm W Aml Cjjyq Rmbmq
+                Jmq Ápzmjcq.. Rs Kybpc Wy Lm Cqryzy W Rs Nybpc Lm Rc Pcamlmaíy. Rc Dsgqrc Yj Zmqosc, Y Zsqaypjyq Y
+                Rmbyq,
+                Y Rmbcq. Apsxyqrc Cj Pím, Pckyqrc, Lybyqrc, Ncpbgqrc Yjeslyq Cvrpckgbybcq. Bczyhm Bc Sly Mpchy Bc
+                Cjcdylrc
+                Réalgaykclrc Amlmagby Amkm Yjmayqgy Ykyxólgay Jyq Clamlrpyqrc Y Rmbyq Jyq Osc Dyjryzyl, Rmbyq Clylyq.
+
+                <br> <br>
+                7. 3 <br>
+                Prolhuh Hvwduíd Rujxoorvr Gh Wí, Sdud Ydujdv Oorvd Qr Halvwhv, Pdujdulwwh Gxudv Txlvlhud Txh Fxhqwhv Páv
+                Klvwruldv Gh Dpru Shur Wx Vror Vdehv Ghfodudu Yduldeohv Hq Ohqjxdmhv Gh Surjudpdflóq.
+                <br> <br>
+                8. 2022 <br>
+
+                Foyai Xy Koy Nixum Fum Unliwcxuxym Xyf Gohxi Uwuvyh, Xywcxym Koy Ym Gigyhni Xy Jihylny U Nluvudul
+
+                <br> <br>
+                9. Google maps: ubicación calle teniente 1504, Lima - Jr. Saenz Peña 127, Barranco <br>
+                Xm Mgfadm: Ngqzae Píme, Nuqzhqzupa, ¿Qz Cgé Bgqpa Mkgpmdxq?
+
+                <br> <br>
+                10. Lo mismo <br>
+                Xae Oxuqzfqe Tayndqe Tmoqz Cgq Fq Bdgqnqe Fapme Xme Bdqzpme Badcgq Puoqz Cgq Qdqe Pq Xm Oazfqjfgdm Pq
+                Ege
+                Qebaeme. Qzfazoqe Fq Bdgqnme Fapme Xme Emxupme Pq Nmña Pq Ráfuym Mdduqfm. Fq Sgefmdím Qzomvmd Qz Xae
+                Pueqñae Pq Mzu Mxhmdql Bqda Ompm Bmzfmxóz Fuqzq Qx Mzota Pq Gzm Buqdzm Fgkm. Xme Oxuqzfme Fq Bdqsgzfmz
+                Eandq Qx Oaxad, M Hqoqe Fq Tmxmsmz, Bad Yayqzfae Fq Mogemz Pq Yqzfudaem K Tmefm Fq Tmoqz Faymdxqe Rafae
+                Oaz Xme Bdqzpme Bgqefme Oaz Fg Oqxgxmd Bmdm Cgq Xgqsa Eq Xme Ymzpqe.
+                <br> <br>
+                11. numero de dígitos del dni <br>
+                It Nqvit Lmt Líi, Bc Kcmzxw, Bc Kcmzxm, Bc Kcmzxi G Bc Oitmzíi Lm Nwbwa Vw Awv Bcgwa, Bcgma, Bcgia, Awv
+                Uivqycíma Ycm Aquctiv Twa Kcmzxwa Lm Tia Maxwaia Lm Bca Ktqmvbma.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
     </section>
   </main>
 
