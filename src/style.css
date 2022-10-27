@@ -1,116 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;600&display=swap');
+
 /* rgb(121, 121, 192); lavanda
 rgb(241, 147, 32) 
 rgb(64, 147, 153)*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     overflow-x: hidden;
     background-color: rgb(121, 121, 192);
-    font-family: 'Gemunu Libre',sans-serif;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 25px;
 }
-.seccion_flex{
+
+h1 {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+
+
+
+}
+
+span {
+    font-size: 20px;
+    font-style: italic;
+    align-self: center;
+    color: white;
+}
+
+.seccion_flex {
     display: flex;
     flex-direction: column;
-   
+
 }
-main{
+
+main {
     padding: 0 2rem;
-    
+
 }
-ol{
+
+ol {
     padding: 0 2rem;
 }
-li{
+
+li {
     padding: 0 40px 2px 0;
 }
-.tabla{
-    
+
+.tabla {
+
     display: flex;
-    
+    color: white;
     padding: 1rem;
     flex-direction: column;
 }
-.div_explicador{
+
+.div_explicador {
     display: flex;
     padding: 1rem 0 0 0;
     flex-direction: row;
 }
-.inputs{
+
+.inputs {
     padding: 1rem 2rem 1rem 2rem;
-display: flex;
-flex-direction: column;
-gap: 20px;
-background-color: rgba(90, 90, 194, 0.753);
-color: black;
-height: max-content;
-width: min-content;
-border-radius: 1rem;
-justify-content: left;
-align-items: left;
-align-content: left;
-position: fixed;
-right: 0px;
-bottom: 20px;
-
-
-box-shadow:rgb(89, 89, 185)  5px 5px ;
-}
-.explicacion_obra{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0 0 0 ;
-    gap: 20px;
-}
-.obra{
-    display: flex;
-    padding: 1rem 0 0 0;
-}
-.divNaranja{
-    background-color: rgb(241, 147, 32) ;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    box-shadow: rgb(182, 113, 30) 5px 5px ;
-    
-}
-
-@media screen and (min-width: 500px){
-    .tabla{
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-    }
-    .unido{
-        display: flex;
-        flex-direction: row;
-        
-    }
-    main{
-        padding: 0 5rem;
-    }
-    ol{
-        padding: 0 2rem;
-    }
-    li{
-        padding: 0 40px 2px 0;
-    }
-    .div_explicador{
-        padding: 1rem 0 0 0;
-    }
-    .explicacion_obra{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-    .inputs{
-        padding: 1rem 10rem 1rem 10rem;
     display: flex;
     flex-direction: column;
     gap: 20px;
-   background-color: rgba(171, 171, 206, 0.781);
+    background-color: rgba(171, 171, 206, 0.781);
     color: black;
     height: max-content;
     width: min-content;
@@ -118,26 +79,384 @@ box-shadow:rgb(89, 89, 185)  5px 5px ;
     justify-content: left;
     align-items: left;
     align-content: left;
-    
-    
-    
-    box-shadow:rgb(89, 89, 185) blur 5px 5px ;
+    /* position: sticky;
+top: 17rem;
+bottom: 5rem; */
+
+
+
+    box-shadow: rgb(89, 89, 185) 5px 5px;
+}
+
+.explicacion_obra {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+    gap: 20px;
+    /* position: static; */
+}
+
+.obra {
+    /* position: relative; */
+    display: flex;
+    padding: 1rem 0 0 0;
+
+}
+
+.divNaranja {
+    background-color: rgb(241, 147, 32);
+    border-radius: 2rem;
+
+    padding: 0.5rem;
+    box-shadow: rgb(89, 89, 185) 5px 5px;
+    position: sticky;
+    top: 5px;
+    left: 1px;
+    font-size: 20px;
+    text-align: left;
+    transform: translate(-3rem);
+    width: 25rem;
+    height: 20rem;
+    overflow-x: scroll;
+    visibility: hidden;
+    opacity: 0;
+    overflow-x: hidden;
+
+
+    /* width: 10rem;
+    transition: all 500ms ease;
+    transform: translate(10%);
+    /* width: fit-content;
+    height: min-content;    */
+
+}
+
+
+#botoncito {
+    display: inline-block;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 6px;
+    background: #7979c0;
+    box-shadow: -5px -5px 12px #39395a,
+        5px 5px 12px #b9b9ff;
+}
+
+.botoncito {
+    visibility: hidden;
+}
+
+#botoncito:checked~.divNaranja {
+    opacity: 1;
+    visibility: visible;
+    /* z-index: 2; */
+
+}
+
+.divResultado2 {
+    background-color: rgb(64, 147, 153);
+    border-radius: 1rem;
+    padding: 1rem;
+
+    box-shadow: rgb(42, 98, 102) 5px 5px;
+
+
+
+}
+
+.unido {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.unido .div_explicador {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.unido form {
+    padding: 1rem 1rem;
+
+}
+
+.boton {
+    display: flex;
+    grid-gap: 3rem;
+    margin: 1rem 0 0 0;
+    width: 6rem;
+    height: 2rem;
+    border-color: #ababce;
+    border-radius: 10px;
+    background: #ababce;
+    box-shadow: -6px 6px 12px #8585a1,
+        6px -6px 12px #d1d1fb;
+}
+
+.boton_obra {
+    padding: .5rem 1rem;
+    margin: 5px 0 0 0;
+    border-color: rgb(197, 118, 16);
+
+    border-radius: 10px;
+    background: rgb(241, 147, 32);
+    box-shadow: -6px 6px 12px rgb(196, 184, 170) 6px -6px 12px rgb(77, 54, 26);
+}
+
+.divResultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: min-content;
+    margin: 10px 0 0 0;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 5px;
+    background: #409399;
+    box-shadow: inset 13px 13px 18px #295e62,
+        inset -13px -13px 18px #57c8d0;
+    position: relative;
+    top: 4rem;
+
+}
+
+.divResultado1 {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: min-content;
+    margin: 10px 0 0 0;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 5px;
+    background: #fa37ff;
+    box-shadow: inset 14px 14px 8px #d22ed6,
+        inset -14px -14px 8px #ff40ff;
+    position: relative;
+    top: 4rem;
+
+}
+
+.div_experiementar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    left: 5rem;
+
+}
+
+#experiementar {
+    display: flex;
+    flex-direction: row;
+
+
+
+    /* position: fixed; */
+    /* right: 5rem; */
+}
+
+.loquequiero {
+    position: relative;
+    top: 5rem;
+}
+
+.final {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    top: 0;
+}
+
+@media screen and (min-width: 469px) {
+
+    .tabla {
+        color: white;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
     }
-    .obra{
+
+    .unido {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    main {
+        padding: 0 5rem;
+    }
+
+    ol {
+        padding: 0 2rem;
+    }
+
+    li {
+        padding: 0 40px 2px 0;
+    }
+
+    .div_explicador {
         padding: 1rem 0 0 0;
     }
-    .divNaranja{
-        background-color: rgb(241, 147, 32) ;
+
+    .explicacion_obra {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+    .inputs {
+        padding: 1rem 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+
+        background-color: rgba(171, 171, 206, 0.781);
+        color: black;
+        height: max-content;
+        width: min-content;
+        border-radius: 1rem;
+        justify-content: left;
+        align-items: left;
+        align-content: left;
+
+
+
+        box-shadow: rgb(89, 89, 185) blur 5px 5px;
+
+    }
+
+    .unido form {
+        padding: 1rem 1rem;
+
+    }
+
+    .obra {
+        display: flex;
+        padding: 1rem 0 0 0;
+        /* position: relative; */
+    }
+
+    .divNaranja {
+        background-color: rgb(241, 147, 32);
         border-radius: 1rem;
         padding: 0.5rem;
-        box-shadow: rgb(182, 113, 30) 5px 5px ;
-        height: 50vh;
+        box-shadow: rgb(182, 113, 30) 5px 5px;
+        width: 65rem;
+        height: min-content;
+        position: sticky;
+        visibility: visible;
+
     }
-    .divResultado2{
+
+    .divResultado2 {
         background-color: rgb(64, 147, 153);
         border-radius: 1rem;
         padding: 1rem;
-        width: 120%;
+        width: 70rem;
+        height: min-content;
         box-shadow: rgb(42, 98, 102) 5px 5px;
+
+
+
+    }
+
+    .div_explicador {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boton_obra {
+        padding: .5rem 1rem;
+        margin: .5rem 0 5px 0;
+        border-color: rgb(241, 147, 32);
+        border-radius: 15px;
+        background: linear-gradient(145deg, #d9841d, #ff9d22);
+        box-shadow: 9px 9px 18px #985d14,
+            -9px -9px 18px #ffc92c;
+    }
+
+    #botoncito {
+        visibility: hidden;
+    }
+
+    .divResultado {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 33rem;
+        height: min-content;
+        margin: 10px 0 0 0;
+        padding: .5rem 1rem .5rem 1rem;
+        border-radius: 5px;
+        background: #409399;
+        box-shadow: inset 13px 13px 18px #295e62,
+            inset -13px -13px 18px #57c8d0;
+        position: relative;
+        top: 6.5rem;
+        left: 14rem;
+
+    }
+
+    .divResultado1 {
+        color: rgb(255, 255, 255);
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 33rem;
+        height: min-content;
+        margin: 10px 0 0 0;
+        padding: .5rem 1rem .5rem 1rem;
+        border-radius: 5px;
+        background: #fa37ff;
+        box-shadow: inset 14px 14px 8px #d22ed6,
+            inset -14px -14px 8px #ff40ff;
+        position: relative;
+        top: 6.5rem;
+        left: 14rem;
+
+
+
+    }
+
+    .div_experiementar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        left: 8rem;
+    }
+
+    /* #experimentar{
+        position: relative;
+        top: 0;
+        right: 19rem;
+        left: 20rem;
+        
+    } */
+    .presentacion {
+        display: flex;
+        padding: 2rem 0 0;
     }
 }
