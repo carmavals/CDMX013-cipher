@@ -39,3 +39,4 @@ const cipher = {
 //console.log(`texto cifrado en cipher: recibio CASA: ${cipher.encode(3, 'casa')}`)
 //console.log(cipher.decode(3, 'FDVD'))
 export default cipher;
+kjhk
